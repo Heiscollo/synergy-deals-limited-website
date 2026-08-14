@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script>document.documentElement.classList.add('js');</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services &amp; Products | Synergy Deals Limited</title>
+  <meta name="description" content="Explore Synergy Deals Limited's full range of IT &amp; telecom solutions and construction &amp; building supplies — from ICT equipment and networking to cement, steel and electrical fittings." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#0B2545', dark: '#071A33' },
+            accent: { DEFAULT: '#FF6B35', soft: '#FF8C5A' },
+            teal: { DEFAULT: '#06B6D4' },
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-white text-slate-800 antialiased">
+
+  <!-- ============ HEADER ============ -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-100 shadow-sm">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="Synergy Deals Limited logo" class="h-12 w-auto object-contain rounded" />
+          <span class="font-heading font-bold text-primary leading-tight">
+            Synergy Deals<span class="block text-[0.65rem] font-semibold text-slate-500 tracking-[0.2em]">LIMITED</span>
+          </span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-9">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="services.html" class="nav-link active">Services</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <div class="hidden md:block">
+          <a href="contact.html" class="btn-cta">
+            Get a Quote
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <button id="menu-toggle" class="md:hidden text-primary" aria-label="Toggle menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="md:hidden hidden pb-6">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="services.html" class="mobile-nav-link active">Services</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <a href="contact.html" class="btn-cta w-full mt-4">Get a Quote</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO ============ -->
+    <section class="hero-gradient text-white">
+      <div class="blob w-72 h-72 bg-teal -top-10 -left-10"></div>
+      <div class="blob w-96 h-96 bg-accent bottom-0 right-0"></div>
+      <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center fade-in-up">
+        <span class="eyebrow justify-center text-teal">Our Products &amp; Services</span>
+        <h1 class="font-heading font-extrabold text-4xl sm:text-5xl mt-4">Everything Your Business Needs, Under One Supplier</h1>
+        <p class="mt-5 text-slate-200 max-w-2xl mx-auto">
+          Seven specialised categories spanning IT &amp; telecom to construction &amp; building supplies —
+          all backed by the same reliable service since 2017.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ CLUSTER NAV ============ -->
+    <div class="bg-white border-b border-slate-100 sticky top-20 z-30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-wrap gap-3 justify-center text-sm font-semibold">
+        <a href="#branding" class="px-4 py-2 rounded-full bg-slate-100 hover:bg-teal/10 hover:text-teal transition-colors">Branding &amp; Promo</a>
+        <a href="#office" class="px-4 py-2 rounded-full bg-slate-100 hover:bg-teal/10 hover:text-teal transition-colors">Office Supplies</a>
+        <a href="#telecom" class="px-4 py-2 rounded-full bg-slate-100 hover:bg-teal/10 hover:text-teal transition-colors">Telecom Equipment</a>
+        <a href="#networking" class="px-4 py-2 rounded-full bg-slate-100 hover:bg-teal/10 hover:text-teal transition-colors">WAN/LAN Networking</a>
+        <a href="#ict" class="px-4 py-2 rounded-full bg-slate-100 hover:bg-teal/10 hover:text-teal transition-colors">ICT Equipment</a>
+        <a href="#construction" class="px-4 py-2 rounded-full bg-slate-100 hover:bg-accent/10 hover:text-accent transition-colors">Construction</a>
+        <a href="#electrical" class="px-4 py-2 rounded-full bg-slate-100 hover:bg-accent/10 hover:text-accent transition-colors">Electrical</a>
+      </div>
+    </div>
+
+    <!-- ============ CLUSTER 1: IT & TELECOM ============ -->
+    <section class="py-16 md:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center gap-3 mb-4 fade-in-up">
+          <span class="icon-circle bg-teal/10 text-teal">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </span>
+          <h2 class="font-heading font-bold text-2xl sm:text-3xl text-primary">IT, Telecom &amp; Office Solutions</h2>
+        </div>
+        <p class="text-slate-600 max-w-2xl mb-12 fade-in-up">
+          Everything you need to run and equip a modern office — from day-to-day supplies and brand
+          visibility to full network and telecom infrastructure.
+        </p>
+
+        <!-- 1. Branding & Promotional Materials -->
+        <div id="branding" class="grid md:grid-cols-2 gap-10 items-center py-10 scroll-mt-40 fade-in-up">
+          <!-- Placeholder imagery: swap with real product photography when available -->
+          <div class="placeholder-art order-2 md:order-1 aspect-[4/3] rounded-3xl bg-gradient-to-br from-teal to-primary text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 opacity-90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23Z"/></svg>
+          </div>
+          <div class="order-1 md:order-2">
+            <span class="eyebrow">01 &middot; IT &amp; Telecom</span>
+            <h3 class="font-heading font-bold text-2xl text-primary mt-2">Branding &amp; Promotional Materials</h3>
+            <p class="text-slate-600 mt-3 leading-relaxed">
+              Get your brand seen and remembered. We supply and print branded t-shirts, caps, umbrellas,
+              banners and fliers for corporate events, product launches, and everyday marketing needs —
+              produced to a consistent, professional finish.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-teal"></span> Branded t-shirts &amp; caps</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-teal"></span> Umbrellas, banners &amp; fliers</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-teal"></span> Event &amp; campaign branding</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2. General Office Supplies -->
+        <div id="office" class="grid md:grid-cols-2 gap-10 items-center py-10 scroll-mt-40 fade-in-up">
+          <div>
+            <span class="eyebrow">02 &middot; IT &amp; Telecom</span>
+            <h3 class="font-heading font-bold text-2xl text-primary mt-2">General Office Supplies</h3>
+            <p class="text-slate-600 mt-3 leading-relaxed">
+              Keep your office running smoothly with a dependable supply of everyday essentials — from
+              printer toners and cartridges to stationery, files and archive boxes, delivered on schedule.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-teal"></span> Toners &amp; cartridges</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-teal"></span> Stationery &amp; office consumables</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-teal"></span> Files &amp; archive boxes</li>
+            </ul>
+          </div>
+          <div class="placeholder-art aspect-[4/3] rounded-3xl bg-gradient-to-br from-primary to-teal text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 opacity-90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 8v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8M3 6h18M12 3v3M9 3v3M15 3v3"/><path d="M9 12h6"/></svg>
+          </div>
+        </div>
+
+        <!-- 3. Telecommunication Equipment -->
+        <div id="telecom" class="grid md:grid-cols-2 gap-10 items-center py-10 scroll-mt-40 fade-in-up">
+          <div class="placeholder-art order-2 md:order-1 aspect-[4/3] rounded-3xl bg-gradient-to-br from-teal to-primary text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 opacity-90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          </div>
+          <div class="order-1 md:order-2">
+            <span class="eyebrow">03 &middot; IT &amp; Telecom</span>
+            <h3 class="font-heading font-bold text-2xl text-primary mt-2">Telecommunication Equipment</h3>
+            <p class="text-slate-600 mt-3 leading-relaxed">
+              We supply and install office phone systems that keep your teams connected — handling
+              everything from equipment sourcing to professional on-site installation.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-teal"></span> PABX &amp; office phone systems</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-teal"></span> Supply &amp; installation</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-teal"></span> Ongoing support</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 4. WAN/LAN Networking -->
+        <div id="networking" class="grid md:grid-cols-2 gap-10 items-center py-10 scroll-mt-40 fade-in-up">
+          <div>
+            <span class="eyebrow">04 &middot; IT &amp; Telecom</span>
+            <h3 class="font-heading font-bold text-2xl text-primary mt-2">WAN/LAN Networking</h3>
+            <p class="text-slate-600 mt-3 leading-relaxed">
+              Reliable connectivity is the backbone of any modern business. We design and install
+              structured cabling and provide ongoing network administration to keep your systems running.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-teal"></span> Structured cabling</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-teal"></span> Network setup &amp; administration</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-teal"></span> LAN/WAN troubleshooting</li>
+            </ul>
+          </div>
+          <div class="placeholder-art aspect-[4/3] rounded-3xl bg-gradient-to-br from-primary to-teal text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 opacity-90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v6M12 13 6.5 18M12 13l5.5 5"/></svg>
+          </div>
+        </div>
+
+        <!-- 5. ICT Equipment -->
+        <div id="ict" class="grid md:grid-cols-2 gap-10 items-center py-10 scroll-mt-40 fade-in-up">
+          <div class="placeholder-art order-2 md:order-1 aspect-[4/3] rounded-3xl bg-gradient-to-br from-teal to-primary text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 opacity-90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div class="order-1 md:order-2">
+            <span class="eyebrow">05 &middot; IT &amp; Telecom</span>
+            <h3 class="font-heading font-bold text-2xl text-primary mt-2">ICT Equipment</h3>
+            <p class="text-slate-600 mt-3 leading-relaxed">
+              Source all your hardware from one supplier — desktops, laptops, printers, servers and
+              networking gear — backed by our team's technical know-how and after-sales support.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-teal"></span> Desktops &amp; laptops</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-teal"></span> Printers &amp; servers</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-teal"></span> Networking gear</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CLUSTER 2: CONSTRUCTION & BUILDING SUPPLIES ============ -->
+    <section class="py-16 md:py-20 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center gap-3 mb-4 fade-in-up">
+          <span class="icon-circle bg-accent/10 text-accent">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+          </span>
+          <h2 class="font-heading font-bold text-2xl sm:text-3xl text-primary">Construction &amp; Building Supplies</h2>
+        </div>
+        <p class="text-slate-600 max-w-2xl mb-12 fade-in-up">
+          Dependable materials for sites of every size, sourced and delivered with the same reliability
+          our clients count on for their IT and office needs.
+        </p>
+
+        <!-- 6. Construction Materials -->
+        <div id="construction" class="grid md:grid-cols-2 gap-10 items-center py-10 scroll-mt-40 fade-in-up">
+          <div class="placeholder-art order-2 md:order-1 aspect-[4/3] rounded-3xl bg-gradient-to-br from-accent to-primary text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 opacity-90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20M4 20V10l4-3 4 3v10M12 20v-6l4-3 4 3v6"/></svg>
+          </div>
+          <div class="order-1 md:order-2">
+            <span class="eyebrow">06 &middot; Construction</span>
+            <h3 class="font-heading font-bold text-2xl text-primary mt-2">Construction Materials</h3>
+            <p class="text-slate-600 mt-3 leading-relaxed">
+              From foundation to finishing, we supply cement, steel, hardware and general building
+              materials in the quantities your project needs — reliably and on time.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Cement &amp; steel</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> General hardware</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Bulk site supply</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 7. Electrical Supplies -->
+        <div id="electrical" class="grid md:grid-cols-2 gap-10 items-center py-10 scroll-mt-40 fade-in-up">
+          <div>
+            <span class="eyebrow">07 &middot; Construction</span>
+            <h3 class="font-heading font-bold text-2xl text-primary mt-2">Electrical Supplies</h3>
+            <p class="text-slate-600 mt-3 leading-relaxed">
+              Wire and light your building with confidence. We supply quality cables, switches, fittings
+              and lighting solutions suited to both residential and commercial projects.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Cables &amp; wiring</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Switches &amp; fittings</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Lighting solutions</li>
+            </ul>
+          </div>
+          <div class="placeholder-art aspect-[4/3] rounded-3xl bg-gradient-to-br from-primary to-accent text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 opacity-90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="py-16 hero-gradient text-white">
+      <div class="blob w-80 h-80 bg-accent -bottom-10 left-1/3"></div>
+      <div class="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in-up">
+        <h2 class="font-heading font-bold text-3xl sm:text-4xl">Don't See Exactly What You Need?</h2>
+        <p class="mt-4 text-slate-200">
+          Tell us your requirement — many of our supplies are sourced to order based on client
+          specifications.
+        </p>
+        <a href="contact.html" class="btn-cta text-base mt-8">
+          Request a Quote
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-primary text-slate-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="Synergy Deals Limited logo" class="h-11 w-auto object-contain rounded bg-white/90 p-1" />
+          <span class="font-heading font-bold text-white">Synergy Deals Limited</span>
+        </a>
+        <p class="text-sm mt-4 leading-relaxed">
+          A Nairobi-based supplier of IT, telecom, office, branding and construction solutions, serving
+          clients across East Africa since 2017.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="font-heading font-semibold text-white mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-teal transition-colors">Home</a></li>
+          <li><a href="services.html" class="hover:text-teal transition-colors">Services</a></li>
+          <li><a href="about.html" class="hover:text-teal transition-colors">About Us</a></li>
+          <li><a href="contact.html" class="hover:text-teal transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-heading font-semibold text-white mb-4">What We Supply</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="services.html#ict" class="hover:text-teal transition-colors">ICT &amp; Networking</a></li>
+          <li><a href="services.html#telecom" class="hover:text-teal transition-colors">Telecommunication</a></li>
+          <li><a href="services.html#office" class="hover:text-teal transition-colors">Office &amp; Branding</a></li>
+          <li><a href="services.html#construction" class="hover:text-teal transition-colors">Construction &amp; Electrical</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-heading font-semibold text-white mb-4">Get In Touch</h4>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mt-0.5 flex-shrink-0 text-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Travel House, 1st Floor, Muindi Mbingu Street, Opposite City Hall Amex, Nairobi</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 flex-shrink-0 text-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+            <a href="tel:+254729801148" class="hover:text-teal transition-colors">+254 729 801 148</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 flex-shrink-0 text-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            <a href="mailto:synergydealsltd@gmail.com" class="hover:text-teal transition-colors break-all">synergydealsltd@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+        <p>&copy; <span id="current-year">2026</span> Synergy Deals Limited. All rights reserved.</p>
+        <p>Registered under the Companies Act 2015, Kenya.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

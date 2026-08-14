@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p css js assets/icons && ls -la)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\ADMIN\\synergy-deals-website"
+    ]
+  }
+}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script>document.documentElement.classList.add('js');</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Synergy Deals Limited</title>
+  <meta name="description" content="Get in touch with Synergy Deals Limited in Nairobi, Kenya. Call, WhatsApp, email, or send us your requirement and we'll get back to you with a quote." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#0B2545', dark: '#071A33' },
+            accent: { DEFAULT: '#FF6B35', soft: '#FF8C5A' },
+            teal: { DEFAULT: '#06B6D4' },
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-white text-slate-800 antialiased">
+
+  <!-- ============ HEADER ============ -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-100 shadow-sm">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="Synergy Deals Limited logo" class="h-12 w-auto object-contain rounded" />
+          <span class="font-heading font-bold text-primary leading-tight">
+            Synergy Deals<span class="block text-[0.65rem] font-semibold text-slate-500 tracking-[0.2em]">LIMITED</span>
+          </span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-9">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+        </div>
+
+        <div class="hidden md:block">
+          <a href="contact.html" class="btn-cta">
+            Get a Quote
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <button id="menu-toggle" class="md:hidden text-primary" aria-label="Toggle menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="md:hidden hidden pb-6">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="services.html" class="mobile-nav-link">Services</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="contact.html" class="mobile-nav-link active">Contact</a>
+        <a href="contact.html" class="btn-cta w-full mt-4">Get a Quote</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO ============ -->
+    <section class="hero-gradient text-white">
+      <div class="blob w-72 h-72 bg-teal -top-10 -left-10"></div>
+      <div class="blob w-96 h-96 bg-accent bottom-0 right-0"></div>
+      <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center fade-in-up">
+        <span class="eyebrow justify-center text-teal">Get In Touch</span>
+        <h1 class="font-heading font-extrabold text-4xl sm:text-5xl mt-4">Let's Talk About What You Need</h1>
+        <p class="mt-5 text-slate-200 max-w-2xl mx-auto">
+          Send us your requirement or reach out directly — our team typically responds within one
+          business day.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT CONTENT ============ -->
+    <section class="py-20 md:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-5 gap-12">
+
+        <!-- Contact Form -->
+        <div class="lg:col-span-3 fade-in-up">
+          <span class="eyebrow">Request a Quote</span>
+          <h2 class="font-heading font-bold text-3xl text-primary mt-3">Send Us Your Requirement</h2>
+          <p class="text-slate-600 mt-3">Fill in the form below and our team will get back to you with a tailored quote.</p>
+
+          <!--
+            Form is UI-only for now. TODO: wire submission up to a backend or
+            email delivery service (see js/main.js for the placeholder handler).
+          -->
+          <form id="contact-form" class="mt-8 space-y-5" novalidate>
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="name" class="block text-sm font-semibold text-slate-700 mb-1.5">Full Name <span class="text-accent">*</span></label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Jane Wanjiru" required />
+              </div>
+              <div>
+                <label for="company" class="block text-sm font-semibold text-slate-700 mb-1.5">Company</label>
+                <input type="text" id="company" name="company" class="form-input" placeholder="Your company (optional)" />
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="email" class="block text-sm font-semibold text-slate-700 mb-1.5">Email <span class="text-accent">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="you@company.com" required />
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-semibold text-slate-700 mb-1.5">Phone</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+254 7xx xxx xxx" />
+              </div>
+            </div>
+
+            <div>
+              <label for="category" class="block text-sm font-semibold text-slate-700 mb-1.5">What do you need?</label>
+              <select id="category" name="category" class="form-input">
+                <option value="">Select a category (optional)</option>
+                <option value="branding">Branding &amp; Promotional Materials</option>
+                <option value="office">General Office Supplies</option>
+                <option value="telecom">Telecommunication Equipment</option>
+                <option value="networking">WAN/LAN Networking</option>
+                <option value="ict">ICT Equipment</option>
+                <option value="construction">Construction Materials</option>
+                <option value="electrical">Electrical Supplies</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-semibold text-slate-700 mb-1.5">Your Requirement <span class="text-accent">*</span></label>
+              <textarea id="message" name="message" rows="5" class="form-input" placeholder="Tell us what you're looking for..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-cta text-base w-full sm:w-auto">
+              Send Message
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z"/></svg>
+            </button>
+
+            <p id="form-status" class="mt-4 text-sm font-medium" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="lg:col-span-2 fade-in-up" style="transition-delay:.1s">
+          <div class="bg-slate-50 rounded-3xl border border-slate-100 p-8 space-y-6">
+            <div class="flex items-start gap-4">
+              <span class="icon-circle bg-teal/10 text-teal shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <div>
+                <h4 class="font-heading font-semibold text-primary">Visit Us</h4>
+                <p class="text-sm text-slate-600 mt-1 leading-relaxed">
+                  Travel House, 1st Floor, Muindi Mbingu Street,<br />
+                  Opposite City Hall Amex,<br />
+                  P.O Box 5040-00100, Nairobi, Kenya
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <span class="icon-circle bg-teal/10 text-teal shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+              </span>
+              <div>
+                <h4 class="font-heading font-semibold text-primary">Call Us</h4>
+                <p class="text-sm text-slate-600 mt-1">
+                  <a href="tel:+254729801148" class="hover:text-accent transition-colors">+254 729 801 148</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <span class="icon-circle bg-teal/10 text-teal shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+              </span>
+              <div>
+                <h4 class="font-heading font-semibold text-primary">Email Us</h4>
+                <p class="text-sm text-slate-600 mt-1">
+                  <a href="mailto:synergydealsltd@gmail.com" class="hover:text-accent transition-colors break-all">synergydealsltd@gmail.com</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <span class="icon-circle bg-emerald-100 text-emerald-600 shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.78 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0 0 12.04 2Zm5.8 14.13c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.8-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.17-1.56-1.17-2.98 0-1.42.74-2.11 1-2.4.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.19-.28.37-.23.62-.14.26.09 1.63.77 1.91.91.28.14.47.21.53.33.07.12.07.68-.17 1.36Z"/></svg>
+              </span>
+              <div>
+                <h4 class="font-heading font-semibold text-primary">WhatsApp</h4>
+                <p class="text-sm text-slate-600 mt-1">
+                  <a href="https://wa.me/254729801148" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">Chat with us on WhatsApp</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map placeholder -->
+          <div class="mt-6 rounded-3xl overflow-hidden border border-slate-200 shadow-sm">
+            <iframe
+              title="Synergy Deals Limited location — Muindi Mbingu Street, Nairobi"
+              src="https://maps.google.com/maps?q=Muindi%20Mbingu%20Street%2C%20Nairobi%2C%20Kenya&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              class="w-full h-64 border-0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-primary text-slate-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="Synergy Deals Limited logo" class="h-11 w-auto object-contain rounded bg-white/90 p-1" />
+          <span class="font-heading font-bold text-white">Synergy Deals Limited</span>
+        </a>
+        <p class="text-sm mt-4 leading-relaxed">
+          A Nairobi-based supplier of IT, telecom, office, branding and construction solutions, serving
+          clients across East Africa since 2017.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="font-heading font-semibold text-white mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-teal transition-colors">Home</a></li>
+          <li><a href="services.html" class="hover:text-teal transition-colors">Services</a></li>
+          <li><a href="about.html" class="hover:text-teal transition-colors">About Us</a></li>
+          <li><a href="contact.html" class="hover:text-teal transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-heading font-semibold text-white mb-4">What We Supply</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="services.html#ict" class="hover:text-teal transition-colors">ICT &amp; Networking</a></li>
+          <li><a href="services.html#telecom" class="hover:text-teal transition-colors">Telecommunication</a></li>
+          <li><a href="services.html#office" class="hover:text-teal transition-colors">Office &amp; Branding</a></li>
+          <li><a href="services.html#construction" class="hover:text-teal transition-colors">Construction &amp; Electrical</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-heading font-semibold text-white mb-4">Get In Touch</h4>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mt-0.5 flex-shrink-0 text-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Travel House, 1st Floor, Muindi Mbingu Street, Opposite City Hall Amex, Nairobi</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 flex-shrink-0 text-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+            <a href="tel:+254729801148" class="hover:text-teal transition-colors">+254 729 801 148</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 flex-shrink-0 text-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            <a href="mailto:synergydealsltd@gmail.com" class="hover:text-teal transition-colors break-all">synergydealsltd@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+        <p>&copy; <span id="current-year">2026</span> Synergy Deals Limited. All rights reserved.</p>
+        <p>Registered under the Companies Act 2015, Kenya.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

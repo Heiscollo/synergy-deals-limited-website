@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script>document.documentElement.classList.add('js');</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Synergy Deals Limited</title>
+  <meta name="description" content="Learn about Synergy Deals Limited — a Nairobi-based supplier established in 2017, our mission, vision, philosophy, and the strengths that set us apart across East Africa." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#0B2545', dark: '#071A33' },
+            accent: { DEFAULT: '#FF6B35', soft: '#FF8C5A' },
+            teal: { DEFAULT: '#06B6D4' },
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-white text-slate-800 antialiased">
+
+  <!-- ============ HEADER ============ -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-100 shadow-sm">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="Synergy Deals Limited logo" class="h-12 w-auto object-contain rounded" />
+          <span class="font-heading font-bold text-primary leading-tight">
+            Synergy Deals<span class="block text-[0.65rem] font-semibold text-slate-500 tracking-[0.2em]">LIMITED</span>
+          </span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-9">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="about.html" class="nav-link active">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <div class="hidden md:block">
+          <a href="contact.html" class="btn-cta">
+            Get a Quote
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <button id="menu-toggle" class="md:hidden text-primary" aria-label="Toggle menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="md:hidden hidden pb-6">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="services.html" class="mobile-nav-link">Services</a>
+        <a href="about.html" class="mobile-nav-link active">About</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <a href="contact.html" class="btn-cta w-full mt-4">Get a Quote</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO ============ -->
+    <section class="hero-gradient text-white">
+      <div class="blob w-72 h-72 bg-teal -top-10 -left-10"></div>
+      <div class="blob w-96 h-96 bg-accent bottom-0 right-0"></div>
+      <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center fade-in-up">
+        <span class="eyebrow justify-center text-teal">About Synergy Deals Limited</span>
+        <h1 class="font-heading font-extrabold text-4xl sm:text-5xl mt-4">Nearly a Decade of Trusted Service in East Africa</h1>
+        <p class="mt-5 text-slate-200 max-w-2xl mx-auto">
+          Built on integrity, quality and a genuine commitment to our clients — since 2017.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ COMPANY BACKGROUND ============ -->
+    <section class="py-20 md:py-24">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-10">
+          <div class="md:col-span-1 fade-in-up">
+            <span class="eyebrow">Our Story</span>
+            <h2 class="font-heading font-bold text-3xl text-primary mt-3">Company Background</h2>
+          </div>
+          <div class="md:col-span-2 fade-in-up" style="transition-delay:.1s">
+            <p class="text-slate-600 leading-relaxed">
+              Synergy Deals Limited was established in 2017 and is duly registered in Kenya under the
+              Companies Act, 2015. In the years since, we have grown from a small local supplier into a
+              trusted partner for corporate, ICT and construction clients across East Africa.
+            </p>
+            <p class="text-slate-600 leading-relaxed mt-4">
+              Today, with close to a decade of experience behind us, we supply everything from IT and
+              telecom equipment to office essentials, branding materials, and construction and electrical
+              supplies — all under one reliable roof.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MISSION / VISION / PHILOSOPHY / QUALITY ============ -->
+    <section class="py-20 md:py-24 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto fade-in-up">
+          <span class="eyebrow justify-center">What Drives Us</span>
+          <h2 class="font-heading font-bold text-3xl sm:text-4xl text-primary mt-3">Mission, Vision &amp; Values</h2>
+        </div>
+
+        <div class="mt-14 grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm card-hover fade-in-up">
+            <span class="icon-circle bg-teal/10 text-teal">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5ZM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </span>
+            <h3 class="font-heading font-bold text-xl text-primary mt-4">Our Mission</h3>
+            <p class="text-slate-600 mt-3 leading-relaxed">
+              To establish Synergy Deals Limited as a local and regional leader in the provision of
+              effective, affordable and quality services to our customers.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm card-hover fade-in-up" style="transition-delay:.05s">
+            <span class="icon-circle bg-accent/10 text-accent">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"/><circle cx="12" cy="12" r="3"/></svg>
+            </span>
+            <h3 class="font-heading font-bold text-xl text-primary mt-4">Our Vision</h3>
+            <p class="text-slate-600 mt-3 leading-relaxed">
+              We focus on delivering high-impact solutions that incorporate customized functionality
+              specific to each client's requirements.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm card-hover fade-in-up" style="transition-delay:.1s">
+            <span class="icon-circle bg-primary/10 text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78Z"/></svg>
+            </span>
+            <h3 class="font-heading font-bold text-xl text-primary mt-4">Our Philosophy</h3>
+            <p class="text-slate-600 mt-3 leading-relaxed">
+              We are committed to excellence, quality, integrity, trust and mutual respect in every
+              engagement — regardless of the size of the job, the budget, or the timeline involved.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm card-hover fade-in-up" style="transition-delay:.15s">
+            <span class="icon-circle bg-teal/10 text-teal">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12.5 11 15l4.5-6"/><circle cx="12" cy="12" r="10"/></svg>
+            </span>
+            <h3 class="font-heading font-bold text-xl text-primary mt-4">Our Quality Statement</h3>
+            <p class="text-slate-600 mt-3 leading-relaxed">
+              Every order, regardless of scale, is held to the same standard of care — reliable sourcing,
+              attentive service, and follow-through from first enquiry to final delivery.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OUR STRENGTHS ============ -->
+    <section class="py-20 md:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto fade-in-up">
+          <span class="eyebrow justify-center">Our Strengths</span>
+          <h2 class="font-heading font-bold text-3xl sm:text-4xl text-primary mt-3">What Sets Synergy Deals Apart</h2>
+        </div>
+
+        <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="fade-in-up flex items-start gap-4 bg-slate-50 rounded-2xl p-6 border border-slate-100">
+            <span class="icon-circle bg-primary/10 text-primary shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <div>
+              <h4 class="font-heading font-semibold text-primary">Experienced Management</h4>
+              <p class="text-sm text-slate-500 mt-1">Leadership with hands-on industry knowledge.</p>
+            </div>
+          </div>
+
+          <div class="fade-in-up flex items-start gap-4 bg-slate-50 rounded-2xl p-6 border border-slate-100" style="transition-delay:.03s">
+            <span class="icon-circle bg-primary/10 text-primary shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M7 15l4-4 3 3 5-6"/></svg>
+            </span>
+            <div>
+              <h4 class="font-heading font-semibold text-primary">Outstanding Track Record</h4>
+              <p class="text-sm text-slate-500 mt-1">A growing reputation built order by order.</p>
+            </div>
+          </div>
+
+          <div class="fade-in-up flex items-start gap-4 bg-slate-50 rounded-2xl p-6 border border-slate-100" style="transition-delay:.06s">
+            <span class="icon-circle bg-primary/10 text-primary shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </span>
+            <div>
+              <h4 class="font-heading font-semibold text-primary">Financially Stable</h4>
+              <p class="text-sm text-slate-500 mt-1">A dependable partner for ongoing supply relationships.</p>
+            </div>
+          </div>
+
+          <div class="fade-in-up flex items-start gap-4 bg-slate-50 rounded-2xl p-6 border border-slate-100" style="transition-delay:.09s">
+            <span class="icon-circle bg-primary/10 text-primary shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 2.7 5.9 6.4.6-4.8 4.4 1.4 6.3L12 16l-5.7 3.2 1.4-6.3-4.8-4.4 6.4-.6z"/></svg>
+            </span>
+            <div>
+              <h4 class="font-heading font-semibold text-primary">Small-Company Feel, Big-Company Know-How</h4>
+              <p class="text-sm text-slate-500 mt-1">Personal attention backed by real capability.</p>
+            </div>
+          </div>
+
+          <div class="fade-in-up flex items-start gap-4 bg-slate-50 rounded-2xl p-6 border border-slate-100" style="transition-delay:.12s">
+            <span class="icon-circle bg-primary/10 text-primary shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>
+            </span>
+            <div>
+              <h4 class="font-heading font-semibold text-primary">Aggressive Problem Solvers</h4>
+              <p class="text-sm text-slate-500 mt-1">We find a way to get your requirement fulfilled.</p>
+            </div>
+          </div>
+
+          <div class="fade-in-up flex items-start gap-4 bg-slate-50 rounded-2xl p-6 border border-slate-100" style="transition-delay:.15s">
+            <span class="icon-circle bg-primary/10 text-primary shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+            </span>
+            <div>
+              <h4 class="font-heading font-semibold text-primary">Domain Expertise</h4>
+              <p class="text-sm text-slate-500 mt-1">Real knowledge across IT, telecom and construction.</p>
+            </div>
+          </div>
+
+          <div class="fade-in-up flex items-start gap-4 bg-slate-50 rounded-2xl p-6 border border-slate-100" style="transition-delay:.18s">
+            <span class="icon-circle bg-primary/10 text-primary shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21a8 8 0 1 0-16 0"/><circle cx="12" cy="7" r="4"/></svg>
+            </span>
+            <div>
+              <h4 class="font-heading font-semibold text-primary">Client-Oriented Approach</h4>
+              <p class="text-sm text-slate-500 mt-1">We listen first, then tailor the solution.</p>
+            </div>
+          </div>
+
+          <div class="fade-in-up flex items-start gap-4 bg-slate-50 rounded-2xl p-6 border border-slate-100" style="transition-delay:.21s">
+            <span class="icon-circle bg-primary/10 text-primary shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12.5 11 15l4.5-6"/><circle cx="12" cy="12" r="10"/></svg>
+            </span>
+            <div>
+              <h4 class="font-heading font-semibold text-primary">High-Quality Solutions</h4>
+              <p class="text-sm text-slate-500 mt-1">We hold ourselves to a consistent standard.</p>
+            </div>
+          </div>
+
+          <div class="fade-in-up flex items-start gap-4 bg-slate-50 rounded-2xl p-6 border border-slate-100" style="transition-delay:.24s">
+            <span class="icon-circle bg-primary/10 text-primary shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </span>
+            <div>
+              <h4 class="font-heading font-semibold text-primary">Well-Trained, Experienced Staff</h4>
+              <p class="text-sm text-slate-500 mt-1">Skilled people behind every order and installation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LEADERSHIP ============ -->
+    <section class="py-20 md:py-24 bg-slate-50">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto fade-in-up">
+          <span class="eyebrow justify-center">Leadership</span>
+          <h2 class="font-heading font-bold text-3xl sm:text-4xl text-primary mt-3">Our Director</h2>
+          <p class="mt-4 text-slate-600">The leadership guiding Synergy Deals Limited's growth and client relationships.</p>
+        </div>
+
+        <div class="mt-14 flex justify-center">
+          <div class="fade-in-up bg-white rounded-3xl p-8 border border-slate-100 shadow-sm text-center card-hover max-w-xs w-full">
+            <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-primary to-teal text-white flex items-center justify-center font-heading font-bold text-2xl">MF</div>
+            <h4 class="font-heading font-semibold text-primary mt-4">Muriuki Bundi Frankline</h4>
+            <p class="text-sm text-accent font-medium mt-1">Director</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="py-16">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 hero-gradient rounded-3xl shadow-lg p-8 sm:p-10 text-white fade-in-up">
+        <div>
+          <h3 class="font-heading font-bold text-2xl">Let's work together</h3>
+          <p class="text-slate-200 mt-1">Reach out and let us know what your business needs.</p>
+        </div>
+        <a href="contact.html" class="btn-cta text-base flex-shrink-0">Get a Quote</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-primary text-slate-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="Synergy Deals Limited logo" class="h-11 w-auto object-contain rounded bg-white/90 p-1" />
+          <span class="font-heading font-bold text-white">Synergy Deals Limited</span>
+        </a>
+        <p class="text-sm mt-4 leading-relaxed">
+          A Nairobi-based supplier of IT, telecom, office, branding and construction solutions, serving
+          clients across East Africa since 2017.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="font-heading font-semibold text-white mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-teal transition-colors">Home</a></li>
+          <li><a href="services.html" class="hover:text-teal transition-colors">Services</a></li>
+          <li><a href="about.html" class="hover:text-teal transition-colors">About Us</a></li>
+          <li><a href="contact.html" class="hover:text-teal transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-heading font-semibold text-white mb-4">What We Supply</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="services.html#ict" class="hover:text-teal transition-colors">ICT &amp; Networking</a></li>
+          <li><a href="services.html#telecom" class="hover:text-teal transition-colors">Telecommunication</a></li>
+          <li><a href="services.html#office" class="hover:text-teal transition-colors">Office &amp; Branding</a></li>
+          <li><a href="services.html#construction" class="hover:text-teal transition-colors">Construction &amp; Electrical</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-heading font-semibold text-white mb-4">Get In Touch</h4>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mt-0.5 flex-shrink-0 text-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Travel House, 1st Floor, Muindi Mbingu Street, Opposite City Hall Amex, Nairobi</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 flex-shrink-0 text-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+            <a href="tel:+254729801148" class="hover:text-teal transition-colors">+254 729 801 148</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 flex-shrink-0 text-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            <a href="mailto:synergydealsltd@gmail.com" class="hover:text-teal transition-colors break-all">synergydealsltd@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+        <p>&copy; <span id="current-year">2026</span> Synergy Deals Limited. All rights reserved.</p>
+        <p>Registered under the Companies Act 2015, Kenya.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
