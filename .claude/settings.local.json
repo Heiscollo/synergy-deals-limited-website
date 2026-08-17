@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(mkdir -p css js assets/icons && ls -la)"
+      "Bash(mkdir -p css js assets/icons && ls -la)",
+      "Bash(npm install *)"
     ],
     "additionalDirectories": [
       "C:\\Users\\ADMIN\\synergy-deals-website"

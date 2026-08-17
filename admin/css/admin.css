@@ -1,0 +1,92 @@
+/* Synergy Deals Admin — small additions on top of ../css/style.css and Tailwind. */
+
+#products-table th,
+#products-table td {
+  vertical-align: middle;
+}
+
+#products-table tbody tr {
+  border-bottom: 1px solid #f1f5f9;
+}
+#products-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.thumb {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  background: #f1f5f9;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.status-badge.available {
+  background: rgba(16, 185, 129, 0.1);
+  color: #059669;
+}
+.status-badge.unavailable {
+  background: rgba(148, 163, 184, 0.15);
+  color: #64748b;
+}
+
+.row-action-btn {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.7rem;
+  border-radius: 9999px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.row-action-btn.edit {
+  color: var(--teal);
+}
+.row-action-btn.edit:hover {
+  background: rgba(6, 182, 212, 0.1);
+}
+.row-action-btn.delete {
+  color: #ef4444;
+}
+.row-action-btn.delete:hover {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+/* Toasts */
+.toast {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.85rem 1rem;
+  border-radius: 0.85rem;
+  box-shadow: 0 10px 25px -8px rgba(11, 37, 69, 0.25);
+  font-size: 0.875rem;
+  font-weight: 500;
+  animation: toast-in 0.2s ease;
+}
+.toast.success {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+.toast.error {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
